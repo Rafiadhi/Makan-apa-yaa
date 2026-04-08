@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Gacha Polling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Menu Awal - 2 Pilihan Kartu -->
+    <div id="menuAwal" class="menu-awal active">
+      <h1 class="title">Letsgoww Kita Pilih!</h1>
+      <div class="card-selection">
+        <!-- Kartu Kiri - Minuman -->
+        <div class="selection-card" id="cardMinuman" data-category="minuman">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <img src="https://i.imgur.com/rmbLZIx.png" alt="Minuman" class="card-image">
+          </div>
+        </div>
+        
+        <!-- Kartu Kanan - Makanan -->
+        <div class="selection-card" id="cardMakanan" data-category="makanan">
+          <div class="card-inner">
+            <div class="card-glow"></div>
+            <img src="https://i.imgur.com/h5RenOk.png" alt="Makanan" class="card-image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Area Shuffle -->
+    <div id="shuffleArea" class="shuffle-area">
+      <h2 class="shuffle-title">SHUFFLING...</h2>
+      <div class="deck-container">
+        <div class="card-deck" id="cardDeck">
+          <!-- Kartu akan di-generate via JS -->
+        </div>
+        <div class="electric-effect" id="electricEffect"></div>
+      </div>
+    </div>
+
+    <!-- Area Hasil -->
+    <div id="hasilArea" class="hasil-area">
+      <div class="hasil-container">
+        <div class="result-card" id="resultCard">
+          <div class="result-card-inner">
+            <div class="card-back">
+              <img src="https://i.imgur.com/3bYhCQW.png" alt="Card Back">
+            </div>
+            <div class="card-front">
+              <img src="" alt="Result" id="resultImage">
+            </div>
+          </div>
+          <div class="electric-punch" id="electricPunch"></div>
+        </div>
+        
+        <!-- Tombol Kembali -->
+        <button class="btn-back" id="btnBack">
+          <img src="https://i.imgur.com/1Hlb8cn.png" alt="Back" class="back-icon">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Electric Particles Container -->
+  <div class="particles-container" id="particlesContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
